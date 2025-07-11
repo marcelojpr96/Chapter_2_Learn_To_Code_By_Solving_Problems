@@ -12,17 +12,17 @@ twopointb = int(input("2 pointers bananas : "))
 onepointb = int(input("1 pointers bananas : "))
 
 threepointb = threepointb * 3
-twopointb = twopointb * 3
+twopointb = twopointb * 2
 
 totalapples = threepointa + twopointa + onepointa
 totalbananas = threepointb+ twopointb + onepointb
 
 if totalapples > totalbananas :
-    print(f"Apples points {totalapples} , bananas points {totalbananas}")
+    print(f"Apples points: {totalapples}, Bananas points: {totalbananas}")
     print("Apples wins")
 elif totalapples < totalbananas :
-    print(f"Apples points {totalapples} , bananas points {totalbananas}")
-    print("bananas wins")
+    print(f"Apples points: {totalapples}, Bananas points: {totalbananas}")
+    print("Bananas wins")
 else :
-    print(f"Apples points {totalapples} , bananas points {totalbananas}")
+    print(f"Apples points: {totalapples}, Bananas points: {totalbananas}")
     print("Tie")
