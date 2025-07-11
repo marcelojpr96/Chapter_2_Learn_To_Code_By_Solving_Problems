@@ -1,0 +1,25 @@
+"""Canadian Computing Competition: 2007 Stage 1, Junior #1
+
+In the story Goldilocks and the Three Bears, each bear had a bowl of porridge to eat while sitting at his/her favourite chair. What the story didn't tell us is that Goldilocks moved the bowls around on the table, so the bowls were not at the right seats anymore. The bowls can be sorted by weight with the lightest bowl being the Baby Bear's bowl, the medium bowl being the Mama Bear's bowl and the heaviest bowl being the Papa Bear's bowl.
+
+Write a program that reads in three weights and prints out the weight of Mama Bear's bowl. You may assume all weights are positive integers less than 100 ."""
+
+bowlone = int(input("Bowl one"))
+bowltwo = int(input("Bowl two"))
+bowlthree = int(input("Bowl three"))
+
+if bowlone > bowltwo and bowlone > bowlthree :
+    if bowltwo > bowlthree :
+        print("bowl two is mom")
+    else :
+        print("bowl three is mom")
+elif bowltwo > bowlone and bowltwo > bowlthree :
+    if bowlone > bowlthree :
+        print("bowl one is mom")
+    else :
+        print("bowl three is mom")
+elif bowlthree > bowlone and bowlthree > bowltwo :
+    if bowlone > bowltwo :
+        print("bowl one is mom")
+    else :
+        print("bowl two is mom")
